@@ -1,0 +1,7 @@
+<div>
+  <%= form_with(model: @item ) do |f| %>
+    <%= f.label :price %>
+    <%= f.number_field :price %>
+    <%= f.submit data: { disable_with: false } %>
+  <% end %>
+</div>
